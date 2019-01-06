@@ -1,0 +1,44 @@
+.meniujuosta {
+	background-color: #71d68a;
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+}
+.pavadinimas {
+	float: left;
+	font-size: 43px;
+	font-family: Impact, Charcoal, sans-serif;
+	margin-left: 8px;
+}
+.kontaktai {
+	float: right;
+	margin-top: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.namai {
+	height: 30px;
+	float: right;
+	margin-right: 8px;
+	margin-top: 8px;
+}
+.meniulinkai {
+	color: black;
+	font-family: Impact, Charcoal, sans-serif;
+	text-decoration: none;
+}
+body {
+	background-color: #d3ffd3;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.apieantraste {
+	text-align: center;
+}
+.pastraipa {
+	text-align: justify;
+	margin: auto;
+	width: 50%;
+}
+.blogonuotraukos {
+	width: 100%;
+}
