@@ -42,3 +42,7 @@ body {
 .blogonuotraukos {
 	width: 100%;
 }
+.blogonuotraukosb {
+	width: 50%;
+	margin: auto;
+}
