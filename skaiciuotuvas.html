@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stilius.css">
+        <title>Skaičiuotuvas</title>
+    </head>
+    <body>
+        <h1>Skaičiuotuvas!</h1>
+        <p>Pirmame laukelyje įveskite vieną skaičių, antrame veiksmą(+, -, *, /), trečiame įveskite antrą skaičių</p>
+        <input id="id1">
+        <input id="id2">
+        <input id="id3">
+        <button onclick=skaiciuok()>=</button>
+        <break>
+        <break>
+        <h1>Pasipraktikuokime!</h1>
+        <break>
+        <p>251 + 649 = </p>
+        <input type="text" id="vienas">
+        <button onclick = patikrink1()>Patikrinti</button>
+        <break>
+        <p>455 + 455 = </p>
+        <input type="text" id="du">
+        <button onclick = patikrink2()>Patikrinti</button>
+        <break>
+        <p>117 / 3 = </p>
+        <input type="text" id="trys">
+        <button onclick = patikrink3()>Patikrinti</button>
+        <break>
+        <p>75 * 3 = </p>
+        <input type="text" id="keturi">
+        <button onclick = patikrink4()>Patikrinti</button>
+        <break>
+        <p>456 - 86 = </p>
+        <input type="text" id="penki">
+        <button onclick = patikrink5()>Patikrinti</button>
+        <h1>Užduočių generatorius!</h1>
+        <button onclick=generuoti()>Generuoti</button>
+        <p id="generatorius"></p>
+        <input type="text" id="sesi">
+        <button onclick=patikrink6()>Patikrinti</button>
+    </body>
+    <script>
+        function skaiciuok(){
+            if(document.getElementById("id2").value == "+")
+            {
+                    var y = Number(document.getElementById("id1").value) + Number(document.getElementById("id3").value);
+                    alert(y);
+            }
+            else if(document.getElementById("id2").value == "-")
+            {
+                var y = Number(document.getElementById("id1").value) - Number(document.getElementById("id3").value);
+                    alert(y);
+            }
+            else if(document.getElementById("id2").value == "*")
+            {
+                var y = Number(document.getElementById("id1").value) * Number(document.getElementById("id3").value);
+                    alert(y);
+            }
+            else if(document.getElementById("id2").value == "/")
+            {
+                var y = Number(document.getElementById("id1").value) / Number(document.getElementById("id3").value);
+                    alert(y);
+            }
+            else alert("Netinkamai ivesti duomenys");
+        }
+        function patikrink1(){
+            if(Number(document.getElementById("vienas").value)===900)
+            alert("Teisingai!!!");
+            else alert("Pasistenk labiau!");
+        }
+        function patikrink2(){
+            if(Number(document.getElementById("du").value)===910)
+            alert("Teisingai!!!");
+            else alert("Pasistenk labiau!");
+        }
+        function patikrink3(){
+            if(Number(document.getElementById("trys").value)===39)
+            alert("Teisingai!!!");
+            else alert("Pasistenk labiau!");
+        }
+        function patikrink4(){
+            if(Number(document.getElementById("keturi").value)===225)
+            alert("Teisingai!!!");
+            else alert("Pasistenk labiau!");
+        }
+        function patikrink5(){
+            if(Number(document.getElementById("penki").value)===370)
+            alert("Teisingai!!!");
+            else alert("Pasistenk labiau!");
+        }
+        var ats;
+        function generuoti(){
+            var x = Math.floor(Math.random()*1000);
+            var y = Math.floor(Math.random()*1000);
+            var z = Math.floor(Math.random()*3);
+            var a;
+            if(z===0){
+                a = "+";
+                ats = x+y;
+            }
+            else if(z===1){
+                a = "-";
+                ats = x-y;
+            }
+            else if(z===2){
+                a = "*";
+                ats = x*y;
+            }
+            document.getElementById("generatorius").innerHTML = x + " " + a + " " + y + " = ";
+        }
+        function patikrink6(){
+                if(Number(document.getElementById("sesi").value)===ats){
+                    alert("TEISINGAAI!!!");
+                }
+                else alert(":(((((");
+        }
+    </script>
+</html>
