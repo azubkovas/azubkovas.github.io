@@ -1,8 +1,8 @@
-body{
-    background-color: coral;
-    color: rgb(75, 68, 60);
+div{
+    margin: auto;
+    text-align: center;
+    width: 60%;
 }
-button{
-    color: bisque;
-    background-color: black;
+img{
+    width: 30%;
 }
